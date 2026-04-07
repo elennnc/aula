@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <style>
+            header, section, aside, footer {
+                background-color: #ccc;
+            }
+
+
+            article {
+                background-color: #888;
+            }
+
+            .container{
+                display: flex;
+                flex:8;
+            }
+
+            section{
+                flex: 7;
+                order:2;
+
+            }
+            aside{
+                flex:3;
+                order:1;
+
+            }
+
+            p{
+                text-align: center;
+            }
+
+            html,body{
+                margin:0;
+                height:100%;
+                overflow-y:hidden;
+            }
+
+            .container-v{
+                display: flex;
+                flex-direction: column;
+                height:100%;
+            }
+
+            header,footer{
+                flex:1;
+            }
+
+        </style>
+        </head>
+        <body>
+            <div class="container-v">
+            <header>
+                
+                <p>HEADER</p>
+            </header>
+            <div class="container">
+            <section>
+                <p>SECTION</p>
+                <article>
+                    <P>ARTICLE</P>
+
+                </article>
+            </section>
+            <aside>
+                <P>ASIDE</P>
+
+            </aside>
+            </div>
+            <footer>
+                <p>FOOTER</p>
+            </footer>
+            </div>
+        </body>
+    
+</html>
